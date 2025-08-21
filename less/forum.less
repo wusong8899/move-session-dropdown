@@ -7,54 +7,11 @@
     align-items: center;
     justify-content: flex-start;
 
-    // Mobile avatar component styling
-    .Navigation-avatar {
+    // Mobile session dropdown component styling
+    .Navigation-session {
       margin-left: auto;
       margin-right: 10px;
       list-style: none;
-
-      .Avatar-button {
-        padding: 6px;
-        border-radius: 50%;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        position: relative;
-        overflow: hidden;
-
-        // Add subtle background on hover
-        &:hover {
-          background: rgba(255, 255, 255, 0.1);
-          transform: translateY(-1px);
-        }
-
-        // Pressed state with scale animation
-        &:active {
-          transform: scale(0.95);
-          background: rgba(255, 255, 255, 0.2);
-        }
-
-        // Focus state for accessibility
-        &:focus {
-          outline: none;
-          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
-        }
-
-        .Avatar {
-          width: 32px;
-          height: 32px;
-          border-radius: 50%;
-          transition: all 0.2s ease;
-          border: 2px solid transparent;
-        }
-
-        // Add subtle glow effect on hover
-        &:hover .Avatar {
-          border-color: rgba(255, 255, 255, 0.2);
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-        }
-      }
     }
   }
 }

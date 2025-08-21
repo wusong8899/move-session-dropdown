@@ -2,7 +2,6 @@ import app from 'flarum/forum/app';
 import { extend } from 'flarum/common/extend';
 import Navigation from 'flarum/common/components/Navigation';
 import SessionDropdown from 'flarum/forum/components/SessionDropdown';
-import avatar from 'flarum/common/helpers/avatar';
 import Mithril from 'mithril';
 
 app.initializers.add('wusong8899-move-session-dropdown', () => {
@@ -21,28 +20,17 @@ app.initializers.add('wusong8899-move-session-dropdown', () => {
       return;
     }
 
-    // Check if we already added the avatar component to avoid duplication
-    const hasAvatarComponent = vnode.children.some((child: any) => 
+    // Check if we already added the session component to avoid duplication
+    const hasSessionComponent = vnode.children.some((child: any) => 
       child && child.attrs && child.attrs.className && 
-      child.attrs.className.includes('Navigation-avatar')
+      child.attrs.className.includes('Navigation-session')
     );
 
-    if (!hasAvatarComponent) {
-      // Add mobile avatar component
+    if (!hasSessionComponent) {
+      // Add SessionDropdown component to navigation
       vnode.children.push(
-        <li className="item-avatar Navigation-avatar">
-          <button 
-            className="Button Button--flat Avatar-button"
-            onclick={() => {
-              // Find and trigger the original session dropdown click
-              const originalDropdown = document.querySelector('#header-secondary .SessionDropdown .Dropdown-toggle, #drawer .SessionDropdown .Dropdown-toggle');
-              if (originalDropdown) {
-                (originalDropdown as HTMLElement).click();
-              }
-            }}
-          >
-            {avatar(app.session.user, { className: 'Avatar--size32' })}
-          </button>
+        <li className="item-session Navigation-session">
+          <SessionDropdown />
         </li>
       );
     }
