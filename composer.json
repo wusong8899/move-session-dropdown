@@ -1,0 +1,40 @@
+{
+  "name": "wusong8899/move-session-dropdown",
+  "description": "Move user session dropdown to the main navigation bar for better accessibility",
+  "keywords": [
+    "flarum",
+    "ui",
+    "navigation",
+    "session",
+    "dropdown",
+    "ux"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "php": "^8.0",
+    "flarum/core": "^1.0"
+  },
+  "authors": [
+    {
+      "name": "wusong8899",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "wusong8899\\MoveSessionDropdown\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Move Session Dropdown",
+      "category": "feature",
+      "icon": {
+        "name": "fas fa-bars",
+        "backgroundColor": "#3498db",
+        "color": "white"
+      }
+    }
+  }
+}

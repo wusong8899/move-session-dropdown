@@ -1,0 +1,23 @@
+{
+	"name": "@wusong8899/move-session-dropdown",
+	"version": "1.0.0",
+	"description": "Move user session dropdown to the main navigation bar",
+	"type": "module",
+	"scripts": {
+		"dev": "vite build --config vite.config.admin.mts --watch",
+		"dev:forum": "vite build --config vite.config.forum.mts --watch",
+		"build": "pnpm run build:admin && pnpm run build:forum",
+		"build:admin": "vite build --config vite.config.admin.mts",
+		"build:forum": "vite build --config vite.config.forum.mts",
+		"lint": "oxlint .",
+		"lint:fix": "oxlint . --fix"
+	},
+	"devDependencies": {
+		"flarum-tsconfig": "^1.0.3",
+		"flarum-webpack-config": "^2.0.2",
+		"less": "^4.4.1",
+		"oxlint": "^1.12.0",
+		"vite": "^7.1.3",
+		"vite-plugin-oxlint": "^1.4.0"
+	}
+}

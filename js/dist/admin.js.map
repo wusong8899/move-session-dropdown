@@ -1,0 +1,1 @@
+{"version":3,"file":"admin.js","sources":["../src/admin/index.tsx"],"sourcesContent":["import app from 'flarum/admin/app';\n\napp.initializers.add('wusong8899/move-session-dropdown', () => {\n  // No admin configuration needed for this simple UI extension\n});"],"names":["app"],"mappings":"0BAEAA,EAAI,aAAa,IAAI,mCAAoC,IAAM,CAE/D,CAAC"}
