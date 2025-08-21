@@ -35,4 +35,4 @@ app.initializers.add('wusong8899-move-session-dropdown', () => {
       );
     }
   });
-},100);
+},1000);
