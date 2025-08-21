@@ -36,6 +36,3 @@ app.initializers.add('wusong8899/move-session-dropdown', () => {
     }
   });
 });
-
-// Import styles
-import './styles.less';
