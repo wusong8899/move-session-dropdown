@@ -1,21 +1,22 @@
 // Mobile-only plugin styles (only applies when viewport <= 767px)
 @media (max-width: 767px) {
+
   // Make navigation bar use flexbox layout
   #app-navigation {
     display: flex !important;
     align-items: center;
     justify-content: flex-start;
-    
+
     .Navigation-spacer {
       flex: 1;
       list-style: none;
     }
-    
+
     // Mobile avatar component styling
     .Navigation-avatar {
       margin-right: 10px;
       list-style: none;
-      
+
       .Avatar-button {
         padding: 4px;
         border-radius: 50%;
@@ -23,20 +24,19 @@
         border: none;
         cursor: pointer;
         transition: opacity 0.2s ease;
-        
+
         &:hover {
           opacity: 0.8;
         }
-        
+
         &:active {
           transform: scale(0.95);
         }
-        
+
         .Avatar {
           width: 32px;
           height: 32px;
           border-radius: 50%;
-          display: block;
         }
       }
     }
