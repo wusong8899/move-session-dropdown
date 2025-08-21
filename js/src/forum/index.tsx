@@ -6,7 +6,7 @@ import Component from 'flarum/common/Component';
 import avatar from 'flarum/common/helpers/avatar';
 import Mithril from 'mithril';
 
-app.initializers.add('wusong8899/move-session-dropdown', () => {
+app.initializers.add('wusong8899-move-session-dropdown', () => {
   extend(Navigation.prototype, 'view', function (vnode: Mithril.VnodeDOM<any, any>) {
     // Only work on mobile devices (viewport width <= 767px)
     if (window.innerWidth > 767) {
