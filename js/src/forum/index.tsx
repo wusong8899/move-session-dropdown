@@ -2,7 +2,6 @@ import app from 'flarum/forum/app';
 import { extend } from 'flarum/common/extend';
 import Navigation from 'flarum/common/components/Navigation';
 import SessionDropdown from 'flarum/forum/components/SessionDropdown';
-import Component from 'flarum/common/Component';
 import avatar from 'flarum/common/helpers/avatar';
 import Mithril from 'mithril';
 
@@ -29,11 +28,6 @@ app.initializers.add('wusong8899-move-session-dropdown', () => {
     );
 
     if (!hasAvatarComponent) {
-      // Add spacer to push avatar to the right
-      vnode.children.push(
-        <li className="Navigation-spacer" style={{flex: 1}}></li>
-      );
-      
       // Add mobile avatar component
       vnode.children.push(
         <li className="item-avatar Navigation-avatar">
