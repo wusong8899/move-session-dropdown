@@ -1,6 +1,5 @@
 // Make navigation bar use flexbox layout
 #app-navigation {
-  display: flex !important;
   align-items: center;
   justify-content: flex-start;
   
@@ -41,6 +40,8 @@
 // Ensure proper mobile handling
 @media (max-width: 767px) {
   #app-navigation {
+    display: flex !important;
+    
     .Navigation-session {
       margin-right: 5px;
       
