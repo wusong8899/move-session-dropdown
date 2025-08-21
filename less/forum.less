@@ -12,6 +12,29 @@
       margin-left: auto;
       margin-right: 10px;
       list-style: none;
+
+      .SessionDropdown {
+        // Hide username label, only show avatar
+        .Button-label {
+          display: none !important;
+        }
+
+        // Optimize dropdown toggle button
+        .Dropdown-toggle {
+          padding: 4px;
+          background: transparent;
+          border: none;
+          border-radius: 50%;
+          cursor: pointer;
+
+          // Ensure avatar is properly styled
+          .Avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+          }
+        }
+      }
     }
   }
 }
