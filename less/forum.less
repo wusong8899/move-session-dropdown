@@ -1,6 +1,11 @@
 // Mobile-only plugin styles (only applies when viewport <= 767px)
 @media (max-width: 767px) {
 
+  // Hide the original session dropdown in Header-secondary on homepage
+  .Header-secondary .item-session {
+    display: none !important;
+  }
+
   // Make navigation bar use flexbox layout
   #app-navigation {
     display: flex !important;

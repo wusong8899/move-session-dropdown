@@ -11,6 +11,12 @@ app.initializers.add('wusong8899-move-session-dropdown', () => {
       return;
     }
 
+    // Only work on homepage
+    const routeName = app.current.get('routeName');
+    if (routeName !== 'index') {
+      return;
+    }
+
     if (!vnode || !vnode.children || !Array.isArray(vnode.children)) {
       return;
     }
