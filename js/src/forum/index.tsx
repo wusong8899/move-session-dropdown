@@ -13,7 +13,7 @@ app.initializers.add('wusong8899-move-session-dropdown', () => {
 
     // Only work on homepage
     const routeName = app.current.get('routeName');
-    if (routeName !== 'index') {
+    if (routeName !== '') {
       return;
     }
 
