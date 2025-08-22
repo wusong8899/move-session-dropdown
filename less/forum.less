@@ -26,6 +26,7 @@
       margin-left: auto;
       margin-right: 10px;
       list-style: none;
+      height: 36px;
 
       .SessionDropdown {
 
@@ -33,16 +34,18 @@
         .Dropdown-toggle {
           background: transparent;
           cursor: pointer;
+          padding: 4px;
+          min-height: 28px;
 
           // Hide username label, only show avatar
           .Button-label {
             display: none !important;
           }
 
-          // Ensure avatar is properly styled
+          // Smaller avatar for compact design
           .Avatar {
-            width: 32px;
-            height: 32px;
+            width: 24px;
+            height: 24px;
             border-radius: 50%;
           }
         }
