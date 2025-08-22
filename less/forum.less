@@ -7,7 +7,10 @@
     align-items: center;
     justify-content: flex-start;
 
-    // Mobile session dropdown component styling
+    .Navigation.App-backControl {
+      flex: 1; // 占据App-navigation所有可用空间       
+    }
+
     .Navigation-session {
       order: 999;
       margin-left: auto;
@@ -15,6 +18,7 @@
       list-style: none;
 
       .SessionDropdown {
+
         // Hide username label, only show avatar
         .Button-label {
           display: none !important;
@@ -22,10 +26,7 @@
 
         // Optimize dropdown toggle button
         .Dropdown-toggle {
-          padding: 4px;
           background: transparent;
-          border: none;
-          border-radius: 50%;
           cursor: pointer;
 
           // Ensure avatar is properly styled
